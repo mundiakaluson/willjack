@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -31,7 +30,7 @@ return new class extends Migration
             $table->boolean("auto_renew")->nullable();
             $table->integer("agreement_fee")->nullable();
             $table->integer("commission_rate")->nullable();
-            $table->integer("letting_commission_rate")->nullable();
+        $table->integer("letting_commission_rate")->nullable();
             $table->integer("charge")->nullable();
             $table->string("vat_on_comission_mode")->nullable();
             $table->string("tenant_deposit_mode")->nullable();
