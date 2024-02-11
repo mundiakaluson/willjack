@@ -14,6 +14,24 @@ return new class extends Migration
         Schema::create('property_units', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foriegnId("property_id");
+            $table->tinyInteger("block")->nullable();
+            $table->tinyInteger("floor")->nullable();
+            $table->tinyText("label")->nullable();
+            $table->string("class")->nullable();
+            $table->string("type")->nullable();
+            $table->string("fit_out")->nullable();
+            $table->boolean("managed")->nullable();
+            $table->tinyInteger("size")->nullable();
+            $table->tinyInteger("beds")->nullable();
+            $table->tinyInteger("baths")->nullable();
+            $table->boolean("status")->nullable();
+            $table->mediumText("description")->nullable();
+            $table->integer("rent_amount")->nullable();
+            $table->integer("rent_deposit")->nullable();
+            $table->integer("electricity_deposit")->nullable();
+            $table->integer("water_deposit")->nullable();
+            $table->integer("other_deposit")->nullable();
         });
     }
 

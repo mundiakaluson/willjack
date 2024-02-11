@@ -13,6 +13,7 @@ return new class extends Migration
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId("landlord_id");
             $table->string("class")->nullable();
             $table->string("category")->nullable();
             $table->string("type")->nullable();
