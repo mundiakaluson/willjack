@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('property_units', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foriegnId("property_id");
+            $table->foreignId("property_id");
             $table->tinyInteger("block")->nullable();
             $table->tinyInteger("floor")->nullable();
             $table->tinyText("label")->nullable();
