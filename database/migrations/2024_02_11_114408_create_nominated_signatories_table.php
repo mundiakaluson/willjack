@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('nominated_signatories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId("user_id")->nullable();
+            $table->foreignId("user_id");
             $table->string("first_name");
             $table->string("last_name");
             $table->string("initials");
-            $table->string("id_number");
-            $table->string("phone_number");
-            $table->string("designation");
+            $table->string("id_number")->nullable();
+            $table->string("phone_number")->nulable();
+            $table->string("designation")->nullable();
         });
     }
 

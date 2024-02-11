@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('caretakers', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId("property_id");
+            $table->string("first_name");
+            $table->string("last_name");
+            $table->string("phone_number");
         });
     }
 
