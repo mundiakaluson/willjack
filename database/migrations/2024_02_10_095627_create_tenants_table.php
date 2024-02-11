@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string("alternate_phone_number")->nullable();
             $table->string("postal_address")->nullable();
             $table->string("town")->nullable();
-            $table->string("occupation")-nullable();
+            $table->string("occupation")->nullable();
             $table->string("email")->nullable();
             $table->string("letting_type")->nullable();
             $table->string("schedule_increment")->nullable();
