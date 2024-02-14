@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Landlord;
+use App\Models\PropertyUnit;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class property extends Model
 {
     use HasFactory;
-    protect $fillable =
+    protected $fillable =
     [
         'landlord_id',
         'class',
@@ -44,5 +46,13 @@ class property extends Model
         'payment_account_number',
         'payment_ratio',
         'property_code',
-    ]
+    ];
+    public function landlord(): BelongsTo
+    {
+        return $this->belongsTo(Landlord::class);
+    }
+    public function property_unit(): HasMany
+    {
+        return $this->hasMany(PropertyUnit::class);
+    }
 }
