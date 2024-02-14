@@ -6,7 +6,7 @@
 
         <title>{{ $title ?? 'Page Title' }}</title>
     </head>
-    <body>
+    <body class="bg-red">
         {{ $slot }}
     </body>
 </html>
