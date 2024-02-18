@@ -8,8 +8,10 @@
         @vite('resources/css/app.css')
         @livewireStyles
     </head>
-    <body class="bg-stone-300">
-        {{ $slot }}
+    <body class="bg-stone-200">
+        <div class="container bg-stone-300 mx-auto px-4 py-2 rounded-lg">
+            {{ $slot }}
+        </div>
         @livewireScripts
     </body>
 </html>

@@ -3,7 +3,7 @@
         href="{{ $url }}"
         class="text-{{ $textColor }}"
     >
-        <span>{{ $icon }}</span>
+        {{ $icon }}
         {{ $text }}
     </a>
 </div>
