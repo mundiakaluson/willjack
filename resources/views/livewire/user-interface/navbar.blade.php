@@ -7,11 +7,23 @@
                         <span>Logo</span>
                     </a>
                 </div>
-                <div class="flex flex-row space-x-10 px-2">
-                    <a href="#" class="px-2">Link</a>
-                    <a href="#" class="px-2">Link</a>
-                    <a href="#" class="px-2">Link</a>
-                    <a href="#" class="px-2">Link</a>
+                <div class="flex flex-row space-x-10 px-2 divide-x divide-slate-400 items-center">
+                    <div class="px-2">
+                        <a href="#">Link</a>
+                    </div>
+                    <div class="px-2">
+                        <a href="#" class="px-2">Link</a>
+                    </div>
+                    <div class="px-2">
+                        <a href="#" class="px-2">Link</a>
+                    </div>
+                    <div class="px-2">
+                        <a href="#" class="px-2">Link</a>
+                    </div>
+                    <div class="px-2">
+                        <button class="px-2 bg-slate-300 rounded-lg shadow py-1 hover:bg-slate-400 hover:text-white transition ease-in-out">Dashboard</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
