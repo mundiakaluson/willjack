@@ -19,7 +19,7 @@ class Link extends Component
         public string $highlightColor,
         )
     {
-        $this->icon = null;
+       //
     }
 
     /**

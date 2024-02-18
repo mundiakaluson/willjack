@@ -6,8 +6,10 @@
 
         <title>{{ $title ?? 'Page Title' }}</title>
         @vite('resources/css/app.css')
+        @livewireStyles
     </head>
-    <body class="bg-gray-100">
+    <body class="bg-stone-300">
         {{ $slot }}
+        @livewireScripts
     </body>
 </html>
