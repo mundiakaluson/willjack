@@ -9,7 +9,7 @@
         @livewireStyles
     </head>
     <body class="bg-stone-200">
-        <div class="container bg-stone-300 mx-auto px-4 py-2 rounded-lg">
+        <div class="container bg-stone-300 mx-auto px-4 py-2 rounded-lg w-3/4 mt-2">
             {{ $slot }}
         </div>
         @livewireScripts
