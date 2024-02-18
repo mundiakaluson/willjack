@@ -11,9 +11,15 @@ class Link extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(
+        public string $url,
+        public string $text,
+        public string $icon,
+        public string $textColor,
+        public string $highlightColor,
+        )
     {
-        //
+        $this->icon = null;
     }
 
     /**

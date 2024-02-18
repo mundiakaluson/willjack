@@ -1,3 +1,9 @@
 <div>
-    <!-- Be present above all else. - Naval Ravikant -->
+    <a
+        href="{{ $url }}"
+        class="text-{{$textColor}} hover:text-{{$highlightColor}}"
+    >
+        <span>{{ $icon }}</span>
+        {{ $text }}
+    </a>
 </div>

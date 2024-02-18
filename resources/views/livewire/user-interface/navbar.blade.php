@@ -1,3 +1,3 @@
 <div>
-    {{-- The Master doesn't talk, he acts. --}}
+    <x-componenets.link :url="#" :text="Some Link" :text-color="red" :highlight-color="black"/>
 </div>
