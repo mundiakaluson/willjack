@@ -1,7 +1,7 @@
 <div>
     <a
         href="{{ $url }}"
-        class="text-{{$textColor}} hover:text-{{$highlightColor}}"
+        class="text-{{ $textColor }}"
     >
         <span>{{ $icon }}</span>
         {{ $text }}

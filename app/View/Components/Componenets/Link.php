@@ -16,7 +16,6 @@ class Link extends Component
         public string $text,
         public string $icon,
         public string $textColor,
-        public string $highlightColor,
         )
     {
        //
