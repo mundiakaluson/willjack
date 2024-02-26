@@ -25,6 +25,13 @@
                     </div>
                 </div>
             </div>
+            <div class="grid grid-cols-5 gap-2 w-full items-center justify-center">
+                <div>1</div>
+                <div>1</div>
+                <div>1</div>
+                <div>1</div>
+            </div>
+
         </div>
     </nav>
 </div>
